@@ -24,9 +24,9 @@ spec:
       containers:
         - env:
             - name: NETWORK_URL
-              value: < mainnet, rinkeby, ropsten or custom Openethereum service >
+              value: https://rinkeby.infura.io/v3/d163c48816434b0bbb3ac3925d6c6c80
             - name: PROVIDER_PRIVATE_KEY
-              value: < private key>
+              value: 0x5d75837394b078ce97bc289fa8d75e21000573520bfa7784a9d28ccaae602bf8
             - name: LOG_LEVEL
               value: INFO
             - name: OCEAN_PROVIDER_URL
@@ -38,7 +38,7 @@ spec:
             - name: OCEAN_PROVIDER_TIMEOUT
               value: "9000"
             - name: AQUARIUS_URL
-              value: < http://aquarius_url >
+              value: https://aquarius.oceanprotocol.com/
           image: oceanprotocol/provider-py:latest
           imagePullPolicy: IfNotPresent
           name: provider
